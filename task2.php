@@ -157,7 +157,7 @@
 // } 
 
 // $colors = array("c1"=>"tiga kali", "c2"=>"tiga kali", "c3"=>"Yellow", "c4"=>"tiga kali");
-
+// echo "Soal No.37";
 // echo "\n"." kata <b>tiga kali</b> muncul ".count_array_values($colors, "tiga kali"). " x. pada Array"."<br>"; 
 
 
@@ -185,16 +185,19 @@
 // }
 
 
-$original = array( '1','2','3','4','5' );
-echo 'Original array : '."\n";
+$original = array( '1','2','3','4','5');
+echo "Soal No.7 <br>";
+echo "Original array : ";
 foreach ($original as $x) 
-{echo "$x ";}
+{
+	echo "$x";
+}
 $inserted = '$';
 array_splice( $original, 3, 0, $inserted ); 
-echo " \n After inserting '$' the array is : "."\n";
+echo "<br> After inserting '$' the array is : "."<br>";
 foreach ($original as $x) 
-{echo "$x ";}
-echo "\n"
+	{echo "$x ";}
+echo "<br>"
 
 
 
