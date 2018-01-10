@@ -141,24 +141,24 @@
 // print_r($kapital);
 
 
-// function count_array_values($my_array, $match) 
-// { 
-//     $count = 0; 
+function count_array_values($my_array, $match) 
+{ 
+    $count = 0; 
     
-//     foreach ($my_array as $key => $value) 
-//     { 
-//         if ($value == $match) 
-//         { 
-//             $count++; 
-//         } 
-//     } 
+    foreach ($my_array as $key => $value) 
+    { 
+        if ($value == $match) 
+        { 
+            $count++; 
+        } 
+    } 
     
-//     return $count; 
-// } 
+    return $count; 
+} 
 
-// $colors = array("c1"=>"tiga kali", "c2"=>"tiga kali", "c3"=>"Yellow", "c4"=>"tiga kali");
-// echo "Soal No.37";
-// echo "\n"." kata <b>tiga kali</b> muncul ".count_array_values($colors, "tiga kali"). " x. pada Array"."<br>"; 
+$colors = array("c1"=>"tiga kali", "c2"=>"tiga kali", "c3"=>"Yellow", "c4"=>"tiga kali");
+echo "Soal No.37";
+echo "\n"." kata <b>tiga kali</b> muncul ".count_array_values($colors, "tiga kali"). " x. pada Array"."<br>"; 
 
 
 // $temperatur_sampel = "78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 81, 76, 73,
@@ -197,7 +197,19 @@ array_splice( $original, 3, 0, $inserted );
 echo "<br> After inserting '$' the array is : "."<br>";
 foreach ($original as $x) 
 	{echo "$x ";}
-echo "<br>"
+echo "<br>";
+
+echo "mengurutkan bilangan ganjil dengan array 1,2,3,4,5,6,7,8,9,10 <br>";
+echo "output :";
+$angka = array(1,2,3,4,5,6,7,8,9,10);
+foreach ($angka as $ganjil) {
+    if ($ganjil%2 != 0) {
+
+    echo $ganjil ;
+    }
+
+
+}
 
 
 
