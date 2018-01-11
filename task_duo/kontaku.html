@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Training</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+<script>
+function validateForm() {
+    var x = document.forms["kontakform"]["email"].value;
+    var y = document.forms["kontakform"]["txt_area"].value;
+    
+    if (x=="") {
+        alert("alamat email harus diisi!");
+        document.getElementById("email").focus();
+        return false;
+
+    }
+
+    if (y==""){
+      alert("Anda belum menuliskan pesan...");
+      document.getElementById("txt_area").focus();
+      return false;
+    }
+
+}
+</script>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Training Bootstrap</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profilriku.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontaku.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      
+<br/>
+     <!-- Features Section -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Riku Kiranatama</h2>
+          <img src="image/natasawilona.png" style="border-radius: 100%; width: 150px; height: 150px; margin-left:30px;" >
+                  
+        </div>
+        <div class="col-lg-6">
+        <form name="kontakform" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email" placeholder="Tulis alamat email anda disini ">
+            </div>
+
+            <div class="form-group">
+            <label> Tulis Pesan : </label>
+            <textarea class="form-control" id="txt_area" placeholder="Pesan anda" rows="10"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Kirim</button>
+            <br/><br/><br/>
+
+            </form>
+  </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; training Januari 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
